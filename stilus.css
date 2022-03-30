@@ -1,0 +1,52 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main
+{
+    display: grid;
+    grid-template-areas: "sb a sj";
+    /* max-width: 1000px; */
+    width: 900px;
+    margin: auto;
+    height: 500px;
+}
+
+main, article, section
+{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+article
+{
+    grid-area: a;
+    width: 300px;
+}
+
+section #bal
+{
+    grid-area: sb;
+    width: 300px;
+}
+
+section #jobb
+{
+    grid-area: sj;
+    width: 300px;
+}
+
+#piros, #sarga, #zold
+{
+    border: 1px solid black;
+    border-radius: 100px;
+    /* margin: 20px;
+    padding: 20px; */
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
