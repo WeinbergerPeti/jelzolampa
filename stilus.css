@@ -3,6 +3,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    /* background-color: #ff0000; */
+}
+
+body
+{
+    margin: auto;
 }
 
 main
@@ -10,12 +16,14 @@ main
     display: grid;
     grid-template-areas: "sb a sj";
     /* max-width: 1000px; */
-    width: 900px;
+    margin: 5px;
     margin: auto;
+    width: 80%;
     height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-main, article, section
+article, section
 {
     border: 1px solid black;
     margin: 5px;
@@ -25,19 +33,18 @@ main, article, section
 article
 {
     grid-area: a;
-    width: 300px;
 }
 
 section #bal
 {
     grid-area: sb;
-    width: 300px;
+    width: 33%;
 }
 
 section #jobb
 {
     grid-area: sj;
-    width: 300px;
+    width: 33%;
 }
 
 #piros, #sarga, #zold
@@ -49,4 +56,6 @@ section #jobb
     width: 100px;
     height: 100px;
     margin: auto;
+    margin-top: 10px;
 }
+
